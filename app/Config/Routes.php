@@ -21,3 +21,7 @@ $routes->post('restoran/store', 'Restoran::store');
 $routes->get('restoran/edit/(:num)', 'Restoran::edit/$1');
 $routes->post('restoran/update/(:num)', 'Restoran::update/$1');
 $routes->get('restoran/delete/(:num)', 'Restoran::delete/$1');
+
+$routes->get('detail/(:num)', 'Home::detail/$1');
+
+$routes->post('komentar/store', 'Komentar::store');

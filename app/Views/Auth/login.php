@@ -131,9 +131,17 @@
         <div class="login-card">
 
             <!-- Branding -->
-            <div class="brand-palembang">
-                <h4>🍽️ Kuliner Palembang</h4>
-                <small>Jelajahi rasa khas Sungai Musi</small>
+            <div class="brand-palembang d-flex align-items-center">
+
+                <img src="<?= base_url('Assets/Frontend/logo.png') ?>"
+                    alt="Logo"
+                    style="height:45px; margin-right:12px; border-radius:10px;">
+
+                <div>
+                    <h5 class="mb-0 font-weight-bold">Kuliner Palembang</h5>
+                    <small class="text-muted">Jelajahi rasa khas Sungai Musi</small>
+                </div>
+
             </div>
 
             <div class="login-title">Selamat Datang</div>
@@ -178,6 +186,12 @@
                 <span style="font-size: 13px; color:#ccc;">Belum punya akun?</span><br>
                 <a href="<?= base_url('register') ?>" class="btn btn-outline-light btn-sm mt-2 px-4">
                     <i class="fas fa-user-plus mr-1"></i> Daftar Sekarang
+                </a>
+            </div>
+
+            <div class="text-center mt-2">
+                <a href="<?= base_url('/') ?>" class="btn btn-light btn-sm px-4" style="border-radius:20px;">
+                    <i class="fas fa-home mr-1"></i> Beranda
                 </a>
             </div>
 

@@ -18,7 +18,7 @@
 
     .hero {
       height: 420px;
-      background: url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5') center/cover;
+      background: url('<?= base_url("Assets/Frontend/ampera.jpg") ?>') center/cover no-repeat;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -71,10 +71,17 @@
     <!-- Navbar -->
     <nav class="main-header navbar navbar-expand-md navbar-light bg-white shadow-sm fixed-top">
       <div class="container">
-        <a href="<?= base_url() ?>" class="navbar-brand font-weight-bold">
-          🍽️ KulinerPalembang
-        </a>
+        <a href="<?= base_url() ?>" class="navbar-brand d-flex align-items-center">
 
+          <img src="<?= base_url('Assets/Frontend/logo.png') ?>"
+            alt="Logo"
+            style="height:35px; margin-right:10px;">
+
+          <span class="font-weight-bold text-dark">
+            KulinerPalembang
+          </span>
+
+        </a>
         <div class="ml-auto">
           <a href="<?= base_url('login') ?>" class="btn btn-outline-success btn-sm rounded-pill">
             Masuk
